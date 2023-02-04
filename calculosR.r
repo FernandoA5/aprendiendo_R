@@ -84,4 +84,30 @@ neworangeec
 
 rename(orangeec, c("V6"="AporteEcNja"))
 
+#FACTORES LISTAS Y DATASET
+Nivel_Curso <- c("Básico", "Intermedio", "Avanzado")
+Nivel_Curso
+
+#Ver un vistaso del dataset
+head(mtcars)#head por defecto devuelve 6 valores | con: head(mtcars, n=3) cambiamos el número
+head(orangeec)
+#ver en qué terminal el dataset
+tail(mtcars)
+tail(orangeec)
+
+glimpse(orangeec)
+
+my_vector <- 1:8 #Genera un vector con números del 1 al 8
+my_matrix <- matrix(1:9, ncol=3) #Genera una matríz con números de 1 a 9 y 3 colúmnas
+#Genera un dataframe con los elementos de mtcars del 1 al 4 con todas sus variables
+my_dataframe <- mtcars[1:4,] 
+#Genera una lista que contiene el vector, la matriz y el dataframe
+my_lista <- list(my_vector, my_matrix, my_dataframe)
+my_lista
+
+#EDA: Exploratory Data Análysis
+
+
+
+
 
